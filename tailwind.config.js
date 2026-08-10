@@ -5,3 +5,4 @@ theme: {
       modern: ['"Plus Jakarta Sans"', 'sans-serif'],
     }
   }
+}
