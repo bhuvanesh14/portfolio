@@ -2,14 +2,14 @@ import { heroData } from "../data.jsx";
 
 function Hero() {
   return (
-    <section className="relative flex flex-col justify-center border-t border-border px-5 py-24 sm:px-8 md:px-16 md:py-28 lg:px-24 min-h-screen ">
+    <section className="relative flex flex-col justify-center border-t border-gray-700 px-5 py-8 sm:px-8 md:px-16 md:py-16 lg:px-24 lg:min-h-screen">
       <div className="mx-auto w-full max-w-6xl">
         <p className="text-[14px] text-gray-300 uppercase">
           {heroData.available[0].text}  · {heroData.available[0].workMode1} · {" "}
           {heroData.available[0].workMode2} · {heroData.available[0].workMode3}
         </p>
         <div className="md:w-[40%]">
-            <h1 className="text-4xl md:text-5xl font-bold mt-[50px]">
+            <h1 className="text-4xl md:text-5xl font-bold mt-12.5">
           {heroData.title}<span className="text-gradient">{heroData.name}</span>
         </h1>
         <p className="text-md text-gray-400 mt-2 break-all"> 

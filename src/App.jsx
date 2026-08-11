@@ -1,5 +1,8 @@
 import "./App.css";
 import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact.jsx";
+import Experiences from "./components/Experiences.jsx";
+import Footer from "./components/Footer.jsx";
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -16,6 +19,9 @@ function App() {
       <AboutMe />
       <Skills />
       <Tools />
+      <Experiences />
+      <Contact />
+      <Footer />
     </>
   );
 }
