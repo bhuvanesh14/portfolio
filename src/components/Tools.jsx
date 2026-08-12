@@ -11,7 +11,7 @@ function Tools() {
             <div>
               <ul className="flex flex-wrap justify-center gap-4">
             {toolsData.lang.map((tools, index) => (
-              <li key={index} className="flex flex-col items-center w-[40%] md:w-[25%] lg:w-[15.5] border rounded-md border-blue-700 gap-2 p-4">
+              <li key={index} className="flex flex-col items-center w-[40%] md:w-[25%] lg:w-[15.5%] border rounded-md border-blue-700 gap-2 p-4">
                 {tools.img && <img src={tools.img} alt={tools.title} width="80" className="p-2" />}
                 <span className="uppercase text-xs md:text-sm lg:text-base">{tools.title}</span>
               </li>

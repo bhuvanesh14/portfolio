@@ -11,7 +11,7 @@ function Skills() {
         <div>
           <ul className="flex flex-wrap justify-center gap-4">
         {skillsData.lang.map((skill, index) => (
-          <li key={index} className="flex flex-col items-center w-[40%] md:w-[20%] lg:w-[18.3] border rounded-md border-blue-700 gap-2 p-4">
+          <li key={index} className="flex flex-col items-center w-[40%] md:w-[20%] lg:w-[18.3%] border rounded-md border-blue-700 gap-2 p-4">
             {skill.img && <img src={skill.img} alt={skill.title} width="80" className="p-2" />}
             <span className="uppercase text-xs md:text-sm lg:text-base">{skill.title}</span>
           </li>
