@@ -12,7 +12,7 @@ import Salesforce from "./assets/skills/salesforce.svg";
 
 // Tools
 import Vscode from "./assets/tools/vscode.svg";
-import Github from "./assets/tools/Github.svg";
+import Github from "./assets/tools/github.svg";
 import Canva from "./assets/tools/canva.svg";
 import Figma from "./assets/tools/figma.svg";
 import Chatgpt from "./assets/tools/chatgpt.svg";
