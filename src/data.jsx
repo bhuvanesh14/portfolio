@@ -247,7 +247,7 @@ export const ExpData = {
 
 export const contactData = {
   title: "Let's Connect.",
-  description: "I'm open to full-time and contract opportunities worldwide — remote, hybrid or onsite. Open to visa-sponsored roles. Looking for a Salesforce UI Engineer specializing in Lightning Web Components, Experience Cloud, and modern frontend engineering with a focus on performance, accessibility, and reusable UI architecture? Let's connect.",
+  description: "I'm open to full-time, Remote and contract opportunities worldwide — remote, hybrid or onsite. Open to visa-sponsored roles. Looking for a Lead UI Engineer specializing in React.js, HTML, CSS, Responsive Web Design, Tailwind CSS and modern frontend engineering with a focus on performance, accessibility, and reusable UI architecture? Let's connect.",
   email: "bhuvaneshjayam1988@gmail.com",
   mobile: "+91-9789894414",
   name: "Bhuvanesh",

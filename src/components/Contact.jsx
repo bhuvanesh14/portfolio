@@ -25,7 +25,7 @@ function Contact() {
               →
             </span>
           </a>
-          <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 font-mono text-base">
+          <div className="mt-10 mb-10 flex flex-wrap gap-x-10 gap-y-4 font-mono text-base">
             <a
               href="tel:+919789894414"
               className="text-muted-foreground hover:text-gray-300"
@@ -41,12 +41,16 @@ function Contact() {
               /{contactData.name}
             </a>
           </div>
-          <button
-            type="button"
-            className="mt-8 rounded-full border border-blue-500 px-6 py-3 text-sm font-semibold text-foreground transition hover:border-blue-700 cursor-pointer"
+          
+            <a
+            href="/resume.pdf"
+            download="Bhuvanesh_Srinivasan_Frontend_UI_Lead_Resume.pdf"
+            className="mt-8 rounded-full border border-blue-500 px-6 py-3 text-sm font-semibold text-foreground transition hover:border-blue-700 cursor-pointer hover:bg-blue-700"
           >
             View Resume
-          </button>
+          </a>
+          
+          
         </div>
       </div>
     </section>

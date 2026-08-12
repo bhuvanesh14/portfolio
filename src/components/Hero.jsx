@@ -15,17 +15,17 @@ function Hero() {
         <p className="text-md text-gray-400 mt-2 break-all"> 
             {heroData.subtitle}</p>
         </div>
-        <div className="mt-8 md:mt-12">
+        <div className="mt-8 mb-10 md:mt-12">
             <ul className="flex flex-wrap gap-4 text-sm text-blue-400">
                 {heroData.languages.map((lang) => (
                     <li key={lang}>{lang}</li>
                 ))}
             </ul>
         </div>
-        <div>
-            <button className="mt-8 bg-blue-500 text-white font-bold px-6 py-3 rounded-md hover:bg-blue-600 transition-colors duration-300">Let's talk →</button>
-            <button className="mt-8 ml-4 border border-blue-500 text-white  px-6 py-3 rounded-md hover:bg-blue-600 transition-colors duration-300">View Resume</button>
-        </div>
+        <a href="#" className="mt-2 bg-blue-500 text-white font-bold px-6 py-3 rounded-md hover:bg-blue-600 transition-colors duration-300">Let's talk →</a>
+            <a
+            href="/resume.pdf"
+            download="Bhuvanesh_Srinivasan_Frontend_UI_Lead_Resume.pdf" className="mt-8 ml-4 border border-blue-500 text-white  px-6 py-3 rounded-md hover:bg-blue-600 transition-colors duration-300">View Resume</a>
       </div>
     </section>
   );

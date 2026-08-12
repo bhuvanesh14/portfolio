@@ -10,8 +10,6 @@ import Skills from "./components/Skills";
 import Tools from "./components/Tools";
 
 function App() {
-  
-
   return (
     <>
       <Header />

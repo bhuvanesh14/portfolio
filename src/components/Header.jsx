@@ -2,7 +2,38 @@ import { useState, useEffect } from "react";
 import { portfolioData } from "../data.jsx";
 
 function Header() {
+  const [isVisible, setIsVisible] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+
+    const initialY = window.scrollY;
+    setLastScrollY(initialY);
+
+    if(initialY <= 50) {
+      setIsVisible(true);
+    }
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if(isMobileMenuOpen) return;
+
+      if(currentScrollY < lastScrollY || currentScrollY < 10) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsVisible(false);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, {passive: true});
+    return () => window.removeEventListener("scroll", handleScroll);
+
+
+  }, [lastScrollY, isMobileMenuOpen]);
+
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -20,7 +51,12 @@ function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 shadow-md backdrop-blur-md padding">
+    // <header className="sticky top-0 z-50 shadow-md backdrop-blur-md padding">
+    <header
+      className={`fixed top-0 left-0 z-50 w-full py-4 px-8 border-b border-b-gray-600 shadow-md backdrop-blur-md transition-transform duration-300 ease-in-out ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <nav className="container flex items-center mx-auto justify-between  text-lg text-gray-700 ">
         <div class="flex items-center gap-2 font-modern">
           <span class="font-tech font-extrabold text-3xl tracking-tighter text-blue-500">
@@ -99,7 +135,7 @@ function Header() {
 
       {/* Mobile Menu Overlay / Panel */}
       <div
-        className={`md:hidden fixed inset-x-0  bg-slate-900 border-b border-slate-200 shadow-lg transition-all duration-300 ease-in-out ${
+        className={`md:hidden fixed inset-x-0 mt-8 bg-slate-900 border-b border-slate-200 shadow-lg transition-all duration-300 ease-in-out ${
           isMobileMenuOpen
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-4 pointer-events-none"
