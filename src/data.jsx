@@ -1,22 +1,22 @@
 
 // Skills
-import Htmlimg from "./assets/skills/HTML.svg";
-import Css from "./assets/skills/CSS.svg";
-import JS from "./assets/skills/JS.svg";
-import Bootstrap from "./assets/skills/Bootstrap.svg";
-import TailwindCSS from "./assets/skills/tailwind-css.svg";
-import Scss from "./assets/skills/scss.svg";
-import React from "./assets/skills/react.svg";
-import Salesforce from "./assets/skills/salesforce.svg";
+import Htmlimg from "/assets/skills/HTML.svg";
+import Css from "/assets/skills/CSS.svg";
+import JS from "/assets/skills/JS.svg";
+import Bootstrap from "/assets/skills/Bootstrap.svg";
+import TailwindCSS from "/assets/skills/tailwind-css.svg";
+import Scss from "/assets/skills/scss.svg";
+import React from "/assets/skills/react.svg";
+import Salesforce from "/assets/skills/salesforce.svg";
 
 
 // Tools
-import Vscode from "./assets/tools/vscode.svg";
-import Github from "./assets/tools/github.svg";
-import Canva from "./assets/tools/canva.svg";
-import Figma from "./assets/tools/figma.svg";
-import Chatgpt from "./assets/tools/chatgpt.svg";
-import Claude from "./assets/tools/claude.svg";
+import Vscode from "/assets/tools/vscode.svg";
+import Github from "/assets/tools/github.svg";
+import Canva from "/assets/tools/canva.svg";
+import Figma from "/assets/tools/figma.svg";
+import Chatgpt from "/assets/tools/chatgpt.svg";
+import Claude from "/assets/tools/claude.svg";
 
 
 
